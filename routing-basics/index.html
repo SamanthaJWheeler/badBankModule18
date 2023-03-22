@@ -5,15 +5,23 @@
     <title>Routing</title>
 
     <!-- don't use this in production: -->
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
   </head>
   <body>
     <!-- we will put our react component inside this div -->
-
+    <div id="root"></div>
 
     <!-- load react and router -->
-   
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
     <!-- load our react component -->
-   
+    <script src="home.js" defer type="text/babel"></script>
+    <script src="about.js" defer type="text/babel"></script>
+    <script src="products.js" defer type="text/babel"></script>
+    <script src="index.js" defer type="text/babel"></script>
+
+
   </body>
 </html>
