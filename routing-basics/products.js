@@ -4,4 +4,4 @@ function Products(){
             <h3>Products Componet</h3>
         </div>
     )
-};
+}

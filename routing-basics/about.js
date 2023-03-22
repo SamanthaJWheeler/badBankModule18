@@ -4,4 +4,4 @@ function About(){
             <h3>About Componet</h3>
         </div>
     )
-};
+}

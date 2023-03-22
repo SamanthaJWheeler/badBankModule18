@@ -4,4 +4,4 @@ function Home(){
             <h3>Home Componet</h3>
         </div>
     )
-};
+}
