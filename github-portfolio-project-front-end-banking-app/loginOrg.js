@@ -8,20 +8,30 @@ function Login(){
   const [verify, setVerify]            = React.useState(true);
   const ctx = React.useContext(UserContext);  
 
-function currentUser(email, password) {
-  if(!email === {UserContext} && !password === {UserContext}) {
-      return false;
-}
-console.log("user does not exist");
-};
+// const foundaEmail = ctx.users[0].email
+// console.log('found an email!', foundaEmail)
+
+
+//const getUser = (userEmail) => {
+//  return ctx.users.find((user) => user.email === userEmail)}
 
 function validate(field, label){
-  if (!field) {
-    setStatus('Error: ' + label);
-    setTimeout(() => setStatus(''),3000);
-    return false;
-  }
-  return true;
+    if(label === 'email'){
+      const verifyEmail = getUser(field)
+      if (!field && verifyEmail) {
+        setStatus('Error: ' + label);
+        setTimeout(() => setStatus(''),3000);
+        return false;
+      }
+    } else {
+      if (!field && !userEmail) {
+        setStatus('Error: ' + label);
+        setTimeout(() => setStatus(''),3000);
+        return false;
+      }
+    }
+    
+    return true;
 }
 
 function handleLogin(){
